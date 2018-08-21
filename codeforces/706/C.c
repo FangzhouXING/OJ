@@ -41,7 +41,7 @@ int main() {
     scanf("%s", buf0);
     for(int i = 1; i < n; i++) {
         scanf("%s", buf1);
-        NC[i] = RC[i] = 92233720368547758;
+        NC[i] = RC[i] = LLONG_MAX;
         NP[i] = RP[i] = false;
         if(strcmp(buf0, buf1) <= 0 && NP[i-1] && NC[i] > NC[i-1] ) {
             NC[i] = NC[i-1];
